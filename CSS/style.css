@@ -1,0 +1,23 @@
+/*===========================*/
+/*============Menu===========*/
+/*===========================*/
+.header{
+    background-color: #FFFFFF !important;
+    padding-top: 0%;
+    height: 100px;
+}
+
+.logo{
+    width: 80px;
+    padding-left: 15px;
+}
+
+.contenedor{
+    width: 100%;
+    box-shadow: 0px 2px 4px 0px #858282;
+}
+
+.list{
+    display: flex;
+    justify-content:  end !important;
+}
