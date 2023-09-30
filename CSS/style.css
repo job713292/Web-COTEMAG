@@ -1,1 +1,117 @@
+/*===========================*/
+/*============Menu===========*/
+/*===========================*/
+.header{
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding-top: 0%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 85px;
+}
 
+.logo{
+    width: 60px;
+    padding-left: px;
+}
+
+.contenedor{
+    width: 100%;
+    box-shadow: 0px 1px 5px 0px #858282;
+    height: 90px;    
+}
+
+.list{
+    display: flex;
+    justify-content:  end !important;
+}
+
+.menu a{
+    color: #D2B862 !important;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: black !important;
+}
+
+/*===========================*/
+/*==========SLIDER===========*/
+/*===========================*/
+.cont{
+    padding-top: 84px;
+    background-position: ;
+}
+
+/*===========================*/
+/*========MEDIA QUERY========*/
+/*===========================*/
+@media (max-width: 768px){
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 90px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .cont{
+        padding-top: 50px;
+    }
+
+    .header{
+        height: 50px !important;
+    }
+
+    .logo{
+        height: 50px !important; 
+        width: 40px;
+    }
+
+    .contenedor{
+        height: 50px !important;
+    }
+
+    .menu-1{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px){
+    .menu{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-1{
+        display: flex;
+        align-items: center;
+    }
+
+    .cont{
+        padding-top: 50px;
+    }
+
+    .header{
+        height: 50px !important;
+    }
+
+    .logo{
+        height: 50px !important; 
+        width: 40px;
+    }
+
+    .contenedor{
+        height: 50px !important;
+    }
+
+}
