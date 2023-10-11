@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@100&display=swap');
+
+
 /*===========================*/
 /*============Menu===========*/
 /*===========================*/
 .header{
-    background-color: rgba(255, 255, 255, 0.9) !important;
+    background-color: transparent !important;
     padding-top: 0%;
     height: 100px;
     position: fixed;
@@ -18,7 +21,6 @@
 
 .contenedor{
     width: 100%;
-    box-shadow: 0px 1px 5px 0px #858282;
     height: 90px;    
 }
 
@@ -30,19 +32,51 @@
 .menu a{
     color: #D2B862 !important;
     font-size: 20px;
+    border-radius: 80px !important;
+    font-family: Poppins;
+    font-size: 18px;
 }
 
 .menu a:hover{
     color: black !important;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
 }
 
-/*===========================*/
-/*==========SLIDER===========*/
-/*===========================*/
-.cont{
-    padding-top: 84px;
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+    width: 100%;
 }
 
+
+
+.menu-horizontal > li > a{
+    display: block;
+    text-decoration: none;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 260px;
+    border-radius: 5px;
+   
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li a{
+    display: block;
+    padding: 10px 10px 10px 15px;
+    text-decoration: none;
+}
 
 /*===========================*/
 /*========MEDIA QUERY========*/
@@ -50,7 +84,7 @@
 @media (max-width: 768px){
     .menu{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         padding: 15px;
         background-color: rgba(255, 255, 255, 0.9);
@@ -61,10 +95,6 @@
         z-index: 1;
     }
 
-    .cont{
-        padding-top: 50px;
-    }
-
     .header{
         height: 50px !important;
     }
@@ -78,16 +108,30 @@
         height: 50px !important;
     }
 
-    .menu-1{
+    .menu-horizontal{
         display: flex;
-        align-items: center;
+        flex-direction: column;
     }
+
+    
+    .menu-vertical{
+        position: relative;
+    }
+
+    .menu-vertical{
+        background-color: transparent;
+    }
+
+    .menu a:hover{
+        background-color: transparent !important;
+    }
+    
 }
 
 @media (max-width: 991px){
     .menu{
         display: flex;
-        align-items: center;
+        align-items: flex-start !important;
         flex-direction: column;
         background-color: rgba(255, 255, 255, 0.9);
         position: absolute;
@@ -95,14 +139,11 @@
         right: 0;
         left: 0;
         z-index: 1;
+        margin-top: -40px;
     }
     .menu-1{
         display: flex;
         align-items: center;
-    }
-
-    .cont{
-        padding-top: 50px;
     }
 
     .header{
@@ -118,4 +159,17 @@
         height: 50px !important;
     }
 
+    .menu-horizontal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .menu-vertical{
+        position: relative;
+    }
+
+    .menu a:hover{
+        background-color: transparent !important;
+    }
 }
